@@ -32,3 +32,23 @@
 ```id -u -n```  
 or  
 ```id -un```
+
+#### Store the username in a variable
+```USER_NAME=$(id -un)```  
+```echo "Your username is ${USER_NAME}"```  
+
+#### is equivalent to (older style)
+```USER_NAME=`id -un````  
+```echo "Your username is ${USER_NAME}"```  
+
+#### Display if the user is root or not
+#### Root always has id 0
+#### [[ ]] can be replace by single []. Double square brackets is the new way. Also this is bash-specific
+#### May not work on other shells like zsh etc.
+```if [[ "${UID}" -eq 0 ]]```  
+```then```  
+  ```echo 'You are root'```  
+```else```  
+  ```echo 'You are not root'```  
+```fi```  
+
