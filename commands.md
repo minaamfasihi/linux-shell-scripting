@@ -11,5 +11,5 @@
 ```man uptime```
 
 #### Printing out variables must be done with double quotes to allow variable expansion
-```WORD='script'
-echo "$WORD" # prints 'script'```
+```WORD='script'```
+```echo "$WORD" # prints 'script'```
