@@ -38,7 +38,7 @@ or
 ```echo "Your username is ${USER_NAME}"```  
 
 #### is equivalent to (older style)
-```USER_NAME=`id -un````  
+```USER_NAME=`id -un```  
 ```echo "Your username is ${USER_NAME}"```  
 
 #### Display if the user is root or not
