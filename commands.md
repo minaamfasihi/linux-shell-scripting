@@ -11,16 +11,16 @@
 ```man uptime```
 
 #### Printing out variables must be done with double quotes to allow variable expansion
-```WORD='script'```
+```WORD='script'```  
 ```echo "$WORD" # prints 'script'```
 
 #### by convention, variables are all uppercase. it's a convention, not a rule!
-```echo "This is a shell $WORD"```
+```echo "This is a shell $WORD"```  
 ```echo "This is a shell ${WORD}"```
 
 #### for append operations, you need curly braces otherwise bash will get confused
-```echo "${WORD}ing is fun!" # scripting is fun```
+```echo "${WORD}ing is fun!" # scripting is fun```  
 ```echo "$WORDing is fun!" # is fun```
 
-```ENDING='ed'```
+```ENDING='ed'```  
 ```echo "This is ${WORD}${ENDING}"```
