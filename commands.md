@@ -24,3 +24,11 @@
 
 ```ENDING='ed'```  
 ```echo "This is ${WORD}${ENDING}"```
+
+#### Display the UID
+```echo "Your UID is ${UID}"```
+
+#### Display the name of user
+```id -u -n```  
+or  
+```id -un```
